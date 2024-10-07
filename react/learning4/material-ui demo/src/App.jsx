@@ -1,34 +1,37 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react';
+import reactLogo from './assets/react.svg';
+import viteLogo from '/vite.svg';
+import './App.css';
+import Button from "@mui/material/Button";
+import IconButton from '@mui/material/IconButton';
+import AlarmIcon from '@mui/icons-material/Alarm';
+import RatingDemo from './RatingDemo';
+import FormDemo from "./FormDemo";
+import Navbar from './Navbar';
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      {/* <Button variant="contained">Contained</Button>
+      <Button variant="text">Contained</Button>
+      <Button variant="outlined">Contained</Button>
+      <Button color="success" variant="contained">Contained</Button>
+      <Button color="secondary" variant="contained" size="small">Contained</Button>
+    
+      <IconButton color="secondary" arial-label="add an alaram">
+        <AlarmIcon/>
+      </IconButton> */}
+
+      {/* <RatingDemo /> */}
+
+      <Navbar />  
+      <FormDemo />
+
+    
+    </div>
   )
 }
 

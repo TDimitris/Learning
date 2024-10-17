@@ -1,4 +1,4 @@
-export default function GameOver({winner}){
+export default function GameOver({winner, onRestart}){
 
 
 
@@ -8,7 +8,7 @@ export default function GameOver({winner}){
             {winner && <p>{winner} won!</p>}
             {!winner && <p>It's a draw!</p>}
             <p>
-                <button>Remath!</button>
+                <button onClick={onRestart}>Remath!</button>
             </p>
         </div>
     )
